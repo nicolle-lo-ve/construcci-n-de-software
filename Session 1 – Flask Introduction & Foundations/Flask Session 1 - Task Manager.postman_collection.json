@@ -1,0 +1,131 @@
+{
+  "info": {
+    "_postman_id": "d4cb957a-1d42-4ee6-ad30-26251b99a519",
+    "name": "Flask Session 1 - Task Manager",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53837979",
+    "_collection_link": "https://go.postman.co/collection/53837979-d4cb957a-1d42-4ee6-ad30-26251b99a519?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Post Data",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Nicolle\",\r\n    \"lastname\": \"Lozano\",\r\n    \"address\": {\r\n        \"city\": \"Aqp\",\r\n        \"country\": \"Perú\",\r\n        \"code\": \"04017\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/users",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Data",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"content\": \"Mi tarea\"}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/users/0",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "users",
+            "0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put Data",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"address\": {\"city\": \"Lima\"}}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/users/0",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "users",
+            "0"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Data",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"content\": \"Mi tarea\"}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/tasks/0",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "tasks",
+            "0"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
