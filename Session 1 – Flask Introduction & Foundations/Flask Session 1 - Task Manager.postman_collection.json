@@ -110,7 +110,7 @@
           "raw": "{\"content\": \"Mi tarea\"}"
         },
         "url": {
-          "raw": "http://127.0.0.1:5000/tasks/0",
+          "raw": "http://127.0.0.1:5000/users/0",
           "protocol": "http",
           "host": [
             "127",
@@ -120,7 +120,7 @@
           ],
           "port": "5000",
           "path": [
-            "tasks",
+            "users",
             "0"
           ]
         }
